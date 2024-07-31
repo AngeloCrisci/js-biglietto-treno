@@ -43,12 +43,13 @@ else if (ageNumber > 65){
     advertised = 'Complimenti, hai ottenuto il 40% di sconto con il premio Mobilità Anziani';
 }
 
+finalPrize = finalPrize.toFixed(2) + '€';
 console.log(advertised);
 console.log(finalPrize);
 
 // 6
 
-
+alert(`Il prezzo del tuo biglietto è ${finalPrize} ${advertised}`)
 
 
 

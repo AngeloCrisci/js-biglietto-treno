@@ -29,19 +29,25 @@ console.log(ageNumber);
 const generatedPrice = kmNumber * 0.21;
 console.log(generatedPrice);
 
-// 4
+// 4 // 5
 
 let finalPrize = generatedPrice;
+let advertised = '';
 
 if ( ageNumber < 18){
     finalPrize *= 0.8;
+    advertised = 'Complimenti, hai ottenuto il 20% di sconto con il premio Mobilità Giovani';
 }
 else if (ageNumber > 65){
     finalPrize *= 0.6;
+    advertised = 'Complimenti, hai ottenuto il 40% di sconto con il premio Mobilità Anziani';
 }
 
+console.log(advertised);
 console.log(finalPrize);
-// 5
+
+// 6
+
 
 
 

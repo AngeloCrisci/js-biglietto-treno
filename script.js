@@ -16,9 +16,13 @@ Bonus Mostriamo in pagina.
 
 
 // 1
+const kmNumber = parseInt(prompt('Quanti kilometri devi percorrere?', 50));
+console.log(kmNumber);
 
 // 2
 
+const ageNumber = parseInt(prompt('Quanti anni ha il passeggero?', 20));
+console.log(ageNumber);
 
 // 3
 

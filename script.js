@@ -13,7 +13,8 @@ Bonus Mostriamo in pagina.
 */
 
 // Recupero l'elemento in pagina-Bonus
-
+const result = document.getElementById('result');
+console.log(result);
 
 // 1
 const kmNumber = parseInt(prompt('Quanti kilometri devi percorrere?', 50));
@@ -34,7 +35,11 @@ console.log(generatedPrice);
 let finalPrize = generatedPrice;
 let advertised = '';
 
-if ( ageNumber < 18){
+//Validation
+if(isNaN(kmNumber) || isNaN(ageNumber)){
+    alert('Elemento non riconosciuto')
+} else {
+    if ( ageNumber < 18){
     finalPrize *= 0.8;
     advertised = 'Complimenti, hai ottenuto il 20% di sconto con il premio Mobilità Giovani';
 }
@@ -49,9 +54,12 @@ console.log(finalPrize);
 
 // 6
 
-alert(`Il prezzo del tuo biglietto è ${finalPrize} ${advertised}`)
+alert(`Il prezzo del tuo biglietto è ${finalPrize} ${advertised}`);
 
 
 
 
-//Bonus 
+//Bonus
+
+result.innerText = `Il prezzo del tuo biglietto è ${finalPrize} ${advertised}`;
+}

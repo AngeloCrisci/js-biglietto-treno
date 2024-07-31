@@ -26,8 +26,24 @@ console.log(ageNumber);
 
 // 3
 
+const generatedPrice = kmNumber + ageNumber * 0.21;
+console.log(generatedPrice);
 
 // 4
 
+const discountMinor = 20;
+const discountMajor = 40;
+let calculatedPerc;
+const discountedPrice = generatedPrice - calculatedPerc;
+
+if ( ageNumber < 18){
+    calculatedPerc = generatedPrice * discountMinor / 100;
+}
+else if (ageNumber > 65){
+    calculatedPerc = generatedPrice * discountMajor / 100;
+}
+
+console.log(calculatedPerc);
+console.log(discountedPrice);
 
 //Bonus 
